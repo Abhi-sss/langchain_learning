@@ -1,0 +1,6 @@
+models code github link : https://github.com/campusx-official/langchain-models/blob/master/2.ChatModels/1_chatmodel_openai.py
+prompts code github link : https://github.com/campusx-official/langchain-prompts/blob/main/prompt_template.py
+structured output github link : 1) https://github.com/campusx-official/langchain-structured-output
+                                2) https://github.com/campusx-official/langchain-output-parsers (output_parser)
+                            
+
