@@ -7,7 +7,7 @@ from typing import Annotated, Literal, Optional, TypedDict
 load_dotenv()
 
 
-model = ChatOpenAI(model="gpt-4")
+model = ChatMistralAI(model="ministral-8b-latest")
 
 class Summary(TypedDict):
 
@@ -15,7 +15,7 @@ class Summary(TypedDict):
     key_discussion: Annotated[list[str], "Write down all the main topic discussed in the conversation in the list"]
     summary: Annotated[str, "A brief summary of the conversation"]
     sentiment: Annotated[Literal["pos", "neg"], "Return sentiment of the review either negative, positive or neutral"]
-    name: Annotated[Optional[str], "Write the name of the persons having conversation"]
+    name: Annotated[list[str], "Write the name of the persons having conversation"]
 
 
 structured_model = model.with_structured_output(Summary)
